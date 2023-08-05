@@ -16,10 +16,15 @@ module.exports = {
   },
 
 
-  fn: async function () {
+  fn: async function (inputs,exits) {
 
     // Respond with view.
-    return {};
+
+
+    const  articulos = await Articulo.find();
+  
+
+    return exits.success({articulos:articulos});
 
   }
 
