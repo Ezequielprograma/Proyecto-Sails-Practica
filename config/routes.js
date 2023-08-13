@@ -23,7 +23,7 @@ module.exports.routes = {
   'GET /inicio': { action: 'view-inicio' },
   'GET /acerca-de': { action: 'view-acerca-de' },
   'GET /terminos-y-condiciones': { action: 'view-terminos-y-condiciones' },
-
+  '/crear':{action: 'crear'},
 
   /***************************************************************************
   *                                                                          *

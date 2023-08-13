@@ -1,5 +1,5 @@
 /**
- * Articulo.js
+ * Comentario.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -13,13 +13,7 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    descripcion: { type: 'string' },
-
-    precio: { type: 'number' },
-
-    modelo: { type: 'string' },
-
-    marca: { type: 'string' },
+    descripcion: { type: 'string'},
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -29,16 +23,10 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
-    usuario: {
-      model: 'usuario',
-      columnName: 'id_usuario'
+    articulo: {
+      model: 'articulo',
+      columnName: 'id_articulo'
     },
-    comentarios:{
-      collection:'comentario',
-      via:'articulo'
-    },
-
   },
 
 };
